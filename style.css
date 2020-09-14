@@ -1,0 +1,137 @@
+
+/*Deskop View*/
+
+body {
+	font-family: 'Asap', sans-serif;
+	color: white;
+	background-color: #EBEBEB;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.container {
+	min-height: 500px;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 140px;
+}
+
+.header-container {
+	background-color: black;
+	min-height: 100px;
+	position: fixed;
+	width: 100%;
+}
+
+header {
+	max-width: 1024px;
+	/*background-color: blueviolet;*/
+	min-height: 100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.col {
+	width: 30%;
+	margin-bottom: 40px;
+	background-color: #A4E49D;
+}
+
+.col p {
+	font-size: 0.875rem;
+	padding: 20px 25px;
+	line-height: 1.25rem;
+}
+
+.hide-desktop-only {
+	display: none;
+}
+
+.col img {
+	width: 100%;
+	margin: auto;
+}
+
+.col p::first-line {
+	font-weight: 700;
+}
+
+.mybutton {
+	padding: 10px 25px ;
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 25px;
+}
+
+.highlight {
+	font-weight: 700;
+}
+/*Tablet View*/
+
+@media (max-width: 768px) {
+
+.col {
+	width: 45%;
+}
+
+.hide-desktop-only {
+	display: block;
+}
+
+header {
+	display: block;
+	text-align: center;
+}
+
+.header-container {
+	position: relative;
+}
+
+.container {
+	padding-top: 40px;
+}
+
+nav {
+	display: none;
+}
+
+nav a {
+	display: block;
+}
+
+.logo {
+	padding: 40px 0;
+}
+
+.mybutton {
+	margin-left: 0;
+}
+
+.mob-wrapper {
+	display: block;
+}
+
+}
+
+/*Mobile View*/
+@media (max-width: 500px) {
+
+.col {
+	width: 100%;
+}
+
+.hide-mobile {
+	display: none;
+}
+
+
+
+}
